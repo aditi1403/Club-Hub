@@ -417,7 +417,10 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 Navigator.of(context).pop();
               },
             ),
-          ],
+            const SizedBox(height: 20,),
+            const Text('Note: This page is solely for display purpose and will be made editable in future app releases.',textAlign: TextAlign.center,style: TextStyle(color: Colors.grey),),
+
+        ],
         ),
     );
   }

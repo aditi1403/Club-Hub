@@ -17,9 +17,13 @@ class _IoTicsState extends State<IoTics> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // backgroundColor: Colors.white,
       backgroundColor: const Color(0xfff2f2f2),
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xfffefefe)),
+      ),
       body: Column(
         children: [
           Container(
@@ -28,8 +32,7 @@ class _IoTicsState extends State<IoTics> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
-              color: Color(0xFF587BE6),
+              color: Color(0xFF4664BF),
             ),
             child: Stack(
               children: [
@@ -40,9 +43,7 @@ class _IoTicsState extends State<IoTics> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
                       color: Color(0xfff2f2f2),
-                      // color: Color(0xffffe88a),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -51,16 +52,15 @@ class _IoTicsState extends State<IoTics> {
                   ),
                 ),
                 const Positioned(
-                  top: 90,
+                  top: 105,
                   left: 15,
                   child: Text(
                     "Iotics Wing",
                     style: TextStyle(
-                      fontSize: 74,
+                      fontSize: 40,
                       letterSpacing: 5,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'KolkerBrush',
-                      // color: Color(0xFF4664bf),
+                      fontFamily: 'KaushanScript',
                       color: Colors.black,
                     ),
                   ),
@@ -84,7 +84,6 @@ class _IoTicsState extends State<IoTics> {
                       width: width*0.9,
                       decoration: BoxDecoration(
                         color: Color(0xfff2f2f2),
-                        // color: Colors.black,
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
                           BoxShadow(
@@ -130,15 +129,15 @@ class _IoTicsState extends State<IoTics> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                        Text("For a Future Driven by IoT",
+                        Text("Future Ready",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        const SizedBox(height: 3,),
                         Text("Official IoT & Robotics Wing",
                           style: TextStyle(
                             fontSize: 12,
@@ -173,14 +172,14 @@ class _IoTicsState extends State<IoTics> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const Color(0xFF587BE6),
+                        color: const Color(0xFF4664BF),
                         // color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
                         ),
                         boxShadow: [
                           BoxShadow(
-                              color: const Color(0xFF587BE6).withOpacity(0.3),
+                              color: const Color(0xFF4664BF).withOpacity(0.3),
                               offset: const Offset(-10.0, 0.0),
                               blurRadius: 20.0,
                               spreadRadius: 4.0
@@ -235,21 +234,6 @@ class _IoTicsState extends State<IoTics> {
                                     size: 30,
                                   ),
                                 ),
-                                // Text("||||||||"),
-                                // const Text("CSE\n2nd Yr",
-                                //   style: TextStyle(
-                                //       color: Colors.white
-                                //   ),
-                                // ),
-                                // buildDivider(),
-                                // GestureDetector(
-                                //   onTap: (){launch('https://www.linkedin.com/in/ambuj-raj-542913201/');},
-                                //   child: const Icon(
-                                //     FontAwesomeIcons.linkedin,
-                                //     color: Colors.white,
-                                //     size: 30,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -263,14 +247,13 @@ class _IoTicsState extends State<IoTics> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const Color(0xFF587BE6),
-                        // color: Colors.black,
+                        color: const Color(0xFF4664BF),
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
                         ),
                         boxShadow: [
                           BoxShadow(
-                              color: const Color(0xFF587BE6).withOpacity(0.3),
+                              color: const Color(0xFF4664BF).withOpacity(0.3),
                               offset: const Offset(-10.0, 0.0),
                               blurRadius: 20.0,
                               spreadRadius: 4.0
@@ -296,14 +279,6 @@ class _IoTicsState extends State<IoTics> {
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),
@@ -311,50 +286,50 @@ class _IoTicsState extends State<IoTics> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                              GestureDetector(
-                                onTap: (){launch('https://www.instagram.com/iotics_iiitn/');},
-                                child: const Icon(
-                                  FontAwesomeIcons.instagramSquare,
-                                  color: Colors.white,
-                                  size: 40,
+                                GestureDetector(
+                                  onTap: (){launch('https://www.instagram.com/iotics_iiitn/');},
+                                  child: const Icon(
+                                    FontAwesomeIcons.instagramSquare,
+                                    color: Colors.white,
+                                    size: 40,
+                                  ),
                                 ),
-                              ),
                                 buildDivider(),
-                              GestureDetector(
-                                onTap: (){launch('https://www.linkedin.com/company/iotics-club-iiitn/');},
-                                child: const Icon(
-                                  FontAwesomeIcons.linkedin,
-                                  color: Colors.white,
-                                  size: 40,
+                                GestureDetector(
+                                  onTap: (){launch('https://www.linkedin.com/company/iotics-club-iiitn/');},
+                                  child: const Icon(
+                                    FontAwesomeIcons.linkedin,
+                                    color: Colors.white,
+                                    size: 40,
+                                  ),
                                 ),
-                              ),
                                 buildDivider(),
-                              GestureDetector(
-                                onTap: (){launch('https://twitter.com/IoTicsWing');},
-                                child: const Icon(
-                                  FontAwesomeIcons.twitter,
-                                  color: Colors.white,
-                                  size: 40,
+                                GestureDetector(
+                                  onTap: (){launch('https://twitter.com/IoTicsWing');},
+                                  child: const Icon(
+                                    FontAwesomeIcons.twitter,
+                                    color: Colors.white,
+                                    size: 40,
+                                  ),
                                 ),
-                              ),
                                 buildDivider(),
-                              GestureDetector(
-                                onTap: (){launch('https://ioticsclub.web.app/');},
-                                child: const Icon(
-                                  FontAwesomeIcons.chrome,
-                                  color: Colors.white,
-                                  size: 40,
+                                GestureDetector(
+                                  onTap: (){launch('https://ioticsclub.web.app/');},
+                                  child: const Icon(
+                                    FontAwesomeIcons.chrome,
+                                    color: Colors.white,
+                                    size: 40,
+                                  ),
                                 ),
-                              ),
                                 buildDivider(),
-                              GestureDetector(
-                                onTap: (){},
-                                child: const Icon(
-                                  FontAwesomeIcons.discord,
-                                  color: Colors.white,
-                                  size: 40,
+                                GestureDetector(
+                                  onTap: (){},
+                                  child: const Icon(
+                                    FontAwesomeIcons.discord,
+                                    color: Colors.white,
+                                    size: 40,
+                                  ),
                                 ),
-                              ),
                               ],
                             ),
                           ),

@@ -40,7 +40,7 @@ import 'pages/club_category/icc_page.dart';
 // import 'pages/inside_club_category/inside_tech.dart';
 import 'pages/login/ui/views/home_view.dart';
 import 'pages/login/core/viewmodels/home_model.dart';
-import 'pages/login/provider/home.dart';
+import 'pages/home.dart';
 import "package:firebase_core/firebase_core.dart";
 // import 'package:firebase_auth/firebase_auth.dart';
 

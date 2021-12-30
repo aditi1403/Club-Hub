@@ -17,9 +17,13 @@ class _DotSlashState extends State<DotSlash> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // backgroundColor: Colors.white,
       backgroundColor: const Color(0xfff3eeea),
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xff000000)),
+      ),
       body: Column(
         children: [
           Container(
@@ -28,8 +32,7 @@ class _DotSlashState extends State<DotSlash> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
-              color: Color(0xFFFAA456),
+              color: Color(0xFFFF800E),
             ),
             child: Stack(
               children: [
@@ -40,9 +43,7 @@ class _DotSlashState extends State<DotSlash> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
                       color: Color(0xfff3eeea),
-                      // color: Color(0xffffe88a),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -51,15 +52,15 @@ class _DotSlashState extends State<DotSlash> {
                   ),
                 ),
                 const Positioned(
-                  top: 90,
+                  top: 105,
                   left: 15,
                   child: Text(
                     "Dot Slash",
                     style: TextStyle(
-                      fontSize: 73,
+                      fontSize: 40,
                       letterSpacing: 5,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'KolkerBrush',
+                      fontFamily: 'KaushanScript',
                       // color: Color(0xFFee7f1c),
                       color: Colors.black,
                     ),
@@ -83,8 +84,7 @@ class _DotSlashState extends State<DotSlash> {
                       height: 180.0,
                       width: width*0.9,
                       decoration: BoxDecoration(
-                        color: Color(0xfff3eeea),
-                        // color: Colors.black,
+                        color: const Color(0xfff3eeea),
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
                           BoxShadow(
@@ -134,11 +134,11 @@ class _DotSlashState extends State<DotSlash> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        const SizedBox(height: 3,),
                         Text("Official Coding Community",
                           style: TextStyle(
                             fontSize: 12,
@@ -150,7 +150,7 @@ class _DotSlashState extends State<DotSlash> {
                         Text("The community, aims to encourage and motivate fellow students to improve their problem solving and analytical skills, by creating an environment of self as well as community learning.",
                           softWrap: true,
                           style: TextStyle(
-                            fontSize: 11,
+                            fontSize: 10.5,
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
                           ),
@@ -173,14 +173,13 @@ class _DotSlashState extends State<DotSlash> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFAA456),
-                        // color: Colors.black,
+                        color: const Color(0xFFFF800E),
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
                         ),
                         boxShadow: [
                           BoxShadow(
-                              color: const Color(0xFFFAA456).withOpacity(0.3),
+                              color: const Color(0xFFFF800E).withOpacity(0.3),
                               offset: const Offset(-10.0, 0.0),
                               blurRadius: 20.0,
                               spreadRadius: 4.0
@@ -235,22 +234,6 @@ class _DotSlashState extends State<DotSlash> {
                                     size: 30,
                                   ),
                                 ),
-
-                                // Text("||||||||"),
-                                // const Text("CSE\n2nd Yr",
-                                //   style: TextStyle(
-                                //       color: Colors.white
-                                //   ),
-                                // ),
-                                // buildDivider(),
-                                // GestureDetector(
-                                //   onTap: (){launch('https://www.linkedin.com/in/ambuj-raj-542913201/');},
-                                //   child: const Icon(
-                                //     FontAwesomeIcons.linkedin,
-                                //     color: Colors.white,
-                                //     size: 30,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -264,14 +247,13 @@ class _DotSlashState extends State<DotSlash> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFAA456),
-                        // color: Colors.black,
+                        color: const Color(0xFFFF800E),
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
                         ),
                         boxShadow: [
                           BoxShadow(
-                              color: const Color(0xFFFAA456).withOpacity(0.3),
+                              color: const Color(0xFFFF800E).withOpacity(0.3),
                               offset: const Offset(-10.0, 0.0),
                               blurRadius: 20.0,
                               spreadRadius: 4.0
@@ -297,14 +279,6 @@ class _DotSlashState extends State<DotSlash> {
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),

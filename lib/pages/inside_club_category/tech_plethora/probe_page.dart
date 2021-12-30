@@ -18,8 +18,12 @@ class _ProbeState extends State<Probe> {
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      // backgroundColor: const Color(0xffd5e5f0),
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Colors.white),
+      ),
       body: Column(
         children: [
           Container(
@@ -28,8 +32,6 @@ class _ProbeState extends State<Probe> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
-              // color: Color(0xFF71226f),
               color: Colors.black,
             ),
             child: Stack(
@@ -41,10 +43,7 @@ class _ProbeState extends State<Probe> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
-                      // color: Color(0xffd5e5f0),
                       color: Colors.white,
-                      // color: Color(0xffffe88a),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -53,16 +52,15 @@ class _ProbeState extends State<Probe> {
                   ),
                 ),
                 const Positioned(
-                  top: 93,
-                  left: 10,
+                  top: 100,
+                  left: 20,
                   child: Text(
                     "PROBE",
                     style: TextStyle(
-                      fontSize: 70,
-                      letterSpacing: 8,
+                      fontSize: 50,
+                      letterSpacing: 5,
                       fontWeight: FontWeight.w500,
-                      fontFamily: 'KolkerBrush',
-                      // color: Color(0xFFee7f1c),
+                      fontFamily: 'KaushanScript',
                       color: Colors.black,
                     ),
                   ),
@@ -85,8 +83,6 @@ class _ProbeState extends State<Probe> {
                       height: 180.0,
                       width: width*0.9,
                       decoration: BoxDecoration(
-                        // color: Color(0xffd5e5f0),
-                        // color: Colors.black,
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
@@ -114,8 +110,6 @@ class _ProbeState extends State<Probe> {
                       height: 180,
                       width: 150,
                       decoration: BoxDecoration(
-                        // color: Color(0xffd5e5f0),
-                        // color: Colors.black,
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(10.0),
                         image: const DecorationImage(
@@ -139,11 +133,11 @@ class _ProbeState extends State<Probe> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        const SizedBox(height: 3,),
                         Text("Official Student Media Body",
                           style: TextStyle(
                             fontSize: 12,
@@ -178,7 +172,6 @@ class _ProbeState extends State<Probe> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
                         color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
@@ -204,7 +197,6 @@ class _ProbeState extends State<Probe> {
                           const Text(
                             "CLUB HEADS",
                             style: TextStyle(
-                              // color: Color(0xffd5e5f0),
                               color: Colors.white,
                               fontSize: 12,
                             ),
@@ -215,7 +207,6 @@ class _ProbeState extends State<Probe> {
                           const Text(
                             "Neha kalbande",
                             style: TextStyle(
-                              // color: Color(0xffd5e5f0),
                               color: Colors.white,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -230,7 +221,6 @@ class _ProbeState extends State<Probe> {
                               children: [
                                 const Text("CSE   3rd Yr",
                                   style: TextStyle(
-                                    // color: Color(0xffd5e5f0),
                                     color: Colors.white
                                   ),
                                 ),
@@ -239,27 +229,10 @@ class _ProbeState extends State<Probe> {
                                   onTap: (){launch('https://www.linkedin.com/in/neha-kalbande-314ab71a7');},
                                   child: const Icon(
                                     FontAwesomeIcons.linkedin,
-                                    // color: Color(0xffd5e5f0),
                                     color: Colors.white,
                                     size: 30,
                                   ),
                                 ),
-
-                                // Text("||||||||"),
-                                // const Text("CSE\n2nd Yr",
-                                //   style: TextStyle(
-                                //       color: Colors.white
-                                //   ),
-                                // ),
-                                // buildDivider(),
-                                // GestureDetector(
-                                //   onTap: (){launch('https://www.linkedin.com/in/ambuj-raj-542913201/');},
-                                //   child: const Icon(
-                                //     FontAwesomeIcons.linkedin,
-                                //     color: Colors.white,
-                                //     size: 30,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -273,7 +246,6 @@ class _ProbeState extends State<Probe> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
                         color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
@@ -299,8 +271,6 @@ class _ProbeState extends State<Probe> {
                           const Text(
                             "CONNECT WITH US!",
                             style: TextStyle(
-                              // color: Colors.white,
-                              // color: Color(0xffd5e5f0),
                               color: Colors.white,
                               fontSize: 12,
                             ),
@@ -308,14 +278,6 @@ class _ProbeState extends State<Probe> {
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),

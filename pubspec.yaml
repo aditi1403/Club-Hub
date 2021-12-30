@@ -132,6 +132,9 @@ flutter:
     - family: KolkerBrush
       fonts:
         - asset: fonts/KolkerBrush-Regular.ttf
+    - family: KaushanScript
+      fonts:
+        - asset: fonts/KaushanScript-Regular.ttf
 
   #
   # For details regarding fonts from package dependencies,

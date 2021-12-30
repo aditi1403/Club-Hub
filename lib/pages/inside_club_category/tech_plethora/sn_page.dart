@@ -18,7 +18,12 @@ class _SkillsNightsState extends State<SkillsNights> {
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xfffefefe)),
+      ),
       body: Column(
         children: [
           Container(
@@ -27,7 +32,6 @@ class _SkillsNightsState extends State<SkillsNights> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
               color: Colors.black,
             ),
             child: Stack(
@@ -39,9 +43,7 @@ class _SkillsNightsState extends State<SkillsNights> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
                       color: Colors.white,
-                      // color: Color(0xffffe88a),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -50,16 +52,15 @@ class _SkillsNightsState extends State<SkillsNights> {
                   ),
                 ),
                 const Positioned(
-                  top: 105,
+                  top: 115,
                   left: 15,
                   child: Text(
                     "SKILLS NIGHTS",
                     style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 30,
                       letterSpacing: 4,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'KolkerBrush',
-                      // color: Color(0xFF363f93),
+                      fontFamily: 'KaushanScript',
                       color: Colors.black,
                     ),
                   ),
@@ -83,7 +84,6 @@ class _SkillsNightsState extends State<SkillsNights> {
                       width: width*0.9,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        // color: Colors.black,
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
                           BoxShadow(
@@ -132,14 +132,14 @@ class _SkillsNightsState extends State<SkillsNights> {
                         Text("Learn.Practice.Excel",
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        SizedBox(height: 3,),
                         Text("Official Skill Development Wing",
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 11,
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
                           ),
@@ -171,7 +171,6 @@ class _SkillsNightsState extends State<SkillsNights> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFf363f93),
                         color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
@@ -261,7 +260,6 @@ class _SkillsNightsState extends State<SkillsNights> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFf363f93),
                         color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
@@ -294,14 +292,6 @@ class _SkillsNightsState extends State<SkillsNights> {
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),

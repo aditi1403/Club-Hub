@@ -10,7 +10,7 @@ class NumbersWidget extends StatelessWidget {
   Widget build(BuildContext context) => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          buildButton(context, 'Student', 'Profession'),
+          buildButton(context, 'Student/\nTeacher', 'Profession'),
           // Column(
           //   mainAxisSize: MainAxisSize.min,
           //   mainAxisAlignment: MainAxisAlignment.start,
@@ -35,7 +35,7 @@ class NumbersWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: const <Widget>[
                 //b_state = true? "ECE" : "CSE",
-                Text( 'CSE',
+                Text( 'CSE/\nECE',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                 ),
                 SizedBox(height: 2),
@@ -56,7 +56,7 @@ class NumbersWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: const <Widget>[
                 Text(
-                  '👧🏻',
+                  '👧🏻 👦🏻',
                   // g_state == true? "👧🏻" : "👦🏻",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                 ),

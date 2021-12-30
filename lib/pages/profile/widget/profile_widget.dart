@@ -18,7 +18,7 @@ class ProfileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = Theme.of(context).colorScheme.primary;
-//this is a profile_widget.dart file...
+
     return Center(
       child: Stack(
         children: [

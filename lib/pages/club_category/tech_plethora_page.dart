@@ -68,75 +68,16 @@ class _TechPlethoraState extends State<TechPlethora> {
                   children: [
                     Container(
                       child: Center(
-                        // child: Stack(
-                        //   children: <Widget>[
-                            child: Container(
-                              child: Image.asset('assets/tech_cover.png',
-                                  fit: BoxFit.cover,
-                                  height: 550,
-                                  width: double.infinity,
-                                  alignment: Alignment.topCenter
-                              ),
-                            // ),
-                            // const SizedBox(
-                            //   height: 15.0,
-                            // ),
-                            // Positioned(
-                            //   top: 540,
-                            //   child: Container(
-                            //     child: const Text('TECH PLETHORA',
-                            //       style: TextStyle(
-                            //         fontSize: 20,
-                            //       ),
-                            //     ),
-                            //   ),),
-                    ),
-                            // Positioned(
-                            //   top: 110,
-                            //   left: 10,
-                            //   right: 10,
-                            //   child: Column(
-                            //     children: [
-                            //     Container(
-                            //       child: Card(
-                            //         // margin: const EdgeInsets.all(30.0),
-                            //         borderOnForeground: false,
-                            //         color: const Color(0xff252525),
-                            //         child: Column(
-                            //           // mainAxisSize: MainAxisSize.max,
-                            //           children: <Widget>[
-                            //             //Image
-                            //             ListTile(
-                            //               title: Image.asset('assets/tech_banner.png',
-                            //                 fit: BoxFit.cover,
-                            //                 height: 200,
-                            //                 alignment: Alignment.center,
-                            //               ),
-                            //             ),
-                            //           ],
-                            //         ),
-                            //       ),
-                            //     ),
-                            //       Container(
-                            //         child: RichText(
-                            //           softWrap: true,
-                            //           text: const TextSpan(
-                            //             text: '\n\n   IIITN hosts a bunch of technical clubs for the student to immerse into the world of tech and awesome technologies taking over the world and contribute to the development of the same.\n  The main objective is to bring all tech enthusiasts under one roof and develop efficient and cost effective solutions to modern day problems.\n\nTechPlethora is concoction of :',
-                            //             style: TextStyle(
-                            //               color: Color(0xff000000),
-                            //               fontSize: 18,
-                            //               fontFamily: 'ShadowsIntoLight',
-                            //             ),
-                            //           ),
-                            //         ),
-                            //       ),
-                            //     ],
-                            //   ),
-                            // ),
-                          // ],
-                        // ),
+                        child: Container(
+                          child: Image.asset('assets/tech_cover.png',
+                              fit: BoxFit.cover,
+                              height: 550,
+                              width: double.infinity,
+                              alignment: Alignment.topCenter
+                          ),
+                        ),
                       ),
-
+                    ),
 
                     // Clubs
                     // # i. Coding Wing (Dot Slash Community)
@@ -145,13 +86,10 @@ class _TechPlethoraState extends State<TechPlethora> {
                     // # iv. Design Wing (strokes)
                     // # v. AR, VR, XR Wing (Dimension)
                     // vi. Social Media(Probe IIITN), Photography and Videography, Magazine wing
-                    ),
+
                     const SizedBox(
                       height: 15.0,
                     ),
-                    // Positioned(
-                    //   top: 540,
-                    //   child:
                       Container(
                         child: const Text('TECH PLETHORA',
                           style: TextStyle(
@@ -163,25 +101,12 @@ class _TechPlethoraState extends State<TechPlethora> {
                     const SizedBox(height: 20,),
                     Container(
                       padding: const EdgeInsets.only(left:15.0, right: 15.0),
-                      child: const Text('IIITN hosts a bunch of technical clubs for the student to immerse into the world of tech and awesome technologies taking over the world and contribute to the development of the same.\nThe main objective is to bring all tech enthusiasts under one roof and develop efficient and cost effective solutions to modern day problems.\n TechPlethora is concoction of :',
+                      child: const Text('IIITN hosts a bunch of technical clubs for the student to immerse into the world of tech and awesome technologies taking over the world and contribute to the development of the same.\nThe main objective is to bring all tech enthusiasts under one roof and develop efficient and cost effective solutions to modern day problems.\n\n TechPlethora is concoction of :',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontFamily: 'Comfortaa',),
                       ),
                     ),
                     const SizedBox(height: 40,),
-                    // Container(
-                    //   child: IconButton(
-                    //     icon: Image.asset('assets/club_arrow.png',
-                    //       height: 90,
-                    //       width: 90,
-                    //       fit: BoxFit.contain,
-                    //     ),
-                    //     iconSize: 90,
-                    //     onPressed: (){
-                    //       // Navigator.pushNamed(context, '/inside_tech');
-                    //     },
-                    //   ),
-                    // ),
                     WillPopScope(
                       onWillPop: () async{
                         if(isDialOpen.value){
@@ -191,7 +116,6 @@ class _TechPlethoraState extends State<TechPlethora> {
                           return true;
                         }
                       },
-                      // child: Container(
                         child: SpeedDial(
                           animatedIcon: AnimatedIcons.menu_arrow,
                           openCloseDial: isDialOpen,
@@ -210,10 +134,8 @@ class _TechPlethoraState extends State<TechPlethora> {
                                   backgroundColor: Colors.black,
                                   onTap: (){
                                     isDialOpen.value = false;
-                                    // print('Share Tapped');
                                     Navigator.pushNamed(context, '/sn_page');
-                                    // Navigator.of(context).pushNamed('sn_page');
-                                  }
+                                    }
                               ),
                             //Dot Slash
                             SpeedDialChild(
@@ -222,18 +144,16 @@ class _TechPlethoraState extends State<TechPlethora> {
                                   label: 'Dot Slash',
                                   onTap: (){
                                     isDialOpen.value = false;
-                                    // print('Mail Tapped');
                                     Navigator.pushNamed(context, '/dot_slash_page');
                                   }
                               ),
                             //IoTics
                             SpeedDialChild(
-                                  child: const Icon(Icons.precision_manufacturing,color: Colors.blueAccent,),
+                                  child: const Icon(Icons.precision_manufacturing,color: Color(0xff4664BF),),
                                   backgroundColor: Colors.white,
                                   label: 'IoTics',
                                   onTap: (){
                                     isDialOpen.value = false;
-                                    // print('Copy Tapped');
                                     Navigator.pushNamed(context, '/iotics_page');
                                   }
                               ),
@@ -244,7 +164,6 @@ class _TechPlethoraState extends State<TechPlethora> {
                                 label: 'Strokes',
                                 onTap: (){
                                   isDialOpen.value = false;
-                                  // print('Copy Tapped');
                                   Navigator.pushNamed(context, '/strokes_page');
                                 }
                             ),
@@ -255,7 +174,6 @@ class _TechPlethoraState extends State<TechPlethora> {
                                 label: 'Dimensions',
                                 onTap: (){
                                   isDialOpen.value = false;
-                                  // print('Copy Tapped');
                                   Navigator.pushNamed(context, '/dimensions_page');
                                 }
                             ),
@@ -266,17 +184,13 @@ class _TechPlethoraState extends State<TechPlethora> {
                                 label: 'Probe',
                                 onTap: (){
                                   isDialOpen.value = false;
-                                  // print('Copy Tapped');
                                   Navigator.pushNamed(context, '/probe_page');
                                 }
                             ),
                           ],
                         ),
-                      // ),
                     ),
                     const SizedBox(height: 40,),
-
-
                   ],
                 ),
               ),
@@ -286,8 +200,6 @@ class _TechPlethoraState extends State<TechPlethora> {
       ),
         persistentFooterButtons: [
           SizedBox(
-            // padding: EdgeInsets.zero,
-            // color: const Color(0xffff914d).withOpacity(0.80),
             height: 50,
             child: Row(
               children: [
@@ -325,8 +237,7 @@ class _TechPlethoraState extends State<TechPlethora> {
         ]
     );
   }
-}
-// TechPlethora Class
+}// TechPlethora Class
 
 // // Dot Slash
 // Container(

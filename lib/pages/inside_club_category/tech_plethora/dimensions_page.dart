@@ -17,9 +17,13 @@ class _DimensionsState extends State<Dimensions> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // backgroundColor: Colors.white,
       backgroundColor: const Color(0xffd5e5f0),
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xffd5e5f0)),
+      ),
       body: Column(
         children: [
           Container(
@@ -41,9 +45,7 @@ class _DimensionsState extends State<Dimensions> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
                       color: Color(0xffd5e5f0),
-                      // color: Color(0xffffe88a),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -52,16 +54,15 @@ class _DimensionsState extends State<Dimensions> {
                   ),
                 ),
                 const Positioned(
-                  top: 105,
+                  top: 110,
                   left: 10,
                   child: Text(
                     "DIMENSIONS",
                     style: TextStyle(
-                      fontSize: 43,
-                      letterSpacing: 7,
+                      fontSize: 35,
+                      letterSpacing: 5,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'KolkerBrush',
-                      // color: Color(0xFFee7f1c),
+                      fontFamily: 'KaushanScript',
                       color: Colors.black,
                     ),
                   ),
@@ -85,7 +86,6 @@ class _DimensionsState extends State<Dimensions> {
                       width: width*0.9,
                       decoration: BoxDecoration(
                         color: Color(0xffd5e5f0),
-                        // color: Colors.black,
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
                           BoxShadow(
@@ -112,7 +112,6 @@ class _DimensionsState extends State<Dimensions> {
                       height: 180,
                       width: 150,
                       decoration: BoxDecoration(
-                        // color: Color(0xffd5e5f0),
                         color: Colors.black,
                         borderRadius: BorderRadius.circular(10.0),
                         image: const DecorationImage(
@@ -136,11 +135,11 @@ class _DimensionsState extends State<Dimensions> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        const SizedBox(height: 3,),
                         Text("Official Game Dev & XR Community",
                           style: TextStyle(
                             fontSize: 12,
@@ -175,7 +174,6 @@ class _DimensionsState extends State<Dimensions> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
                         color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
@@ -237,22 +235,6 @@ class _DimensionsState extends State<Dimensions> {
                                     size: 30,
                                   ),
                                 ),
-
-                                // Text("||||||||"),
-                                // const Text("CSE\n2nd Yr",
-                                //   style: TextStyle(
-                                //       color: Colors.white
-                                //   ),
-                                // ),
-                                // buildDivider(),
-                                // GestureDetector(
-                                //   onTap: (){launch('https://www.linkedin.com/in/ambuj-raj-542913201/');},
-                                //   child: const Icon(
-                                //     FontAwesomeIcons.linkedin,
-                                //     color: Colors.white,
-                                //     size: 30,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -266,7 +248,6 @@ class _DimensionsState extends State<Dimensions> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
                         color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
@@ -292,7 +273,6 @@ class _DimensionsState extends State<Dimensions> {
                           const Text(
                             "CONNECT WITH US!",
                             style: TextStyle(
-                              // color: Colors.white,
                               color: Color(0xffd5e5f0),
                               fontSize: 12,
                             ),
@@ -300,14 +280,6 @@ class _DimensionsState extends State<Dimensions> {
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),

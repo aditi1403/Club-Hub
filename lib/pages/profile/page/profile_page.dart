@@ -3,7 +3,8 @@
 // import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:attendance_app/pages/profile/themes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:attendance_app/pages/profile/model/user.dart';
 import 'package:attendance_app/pages/profile/utils/user_preferences.dart';
@@ -30,21 +31,28 @@ class _ProfileState extends State<Profile> {
   //   });
   // }
   final user = FirebaseAuth.instance.currentUser!;
+
+  // String name;
+  // static const name = user.displayName ?? user.email;
+  // var name = user?.displayName ?? 0;
+
   @override
   Widget build(BuildContext context) {
-    // const user = UserPreferences.myUser;
     late final users = UserPreferences.getUser();
-    // final user = FirebaseAuth.instance.currentUser!;
+    // var name = user?.displayName ?? 0;
+
 
     return Scaffold(
         backgroundColor: const Color(0xffffe88a),
         appBar: buildAppBar(context),
         body: ListView(
+          // padding: const EdgeInsets.symmetric(horizontal: 32),
           physics: const BouncingScrollPhysics(),
           children: [
             const SizedBox(height: 20,),
             ProfileWidget(
               imagePath: users.imagePath,
+              // imagePath: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
               isEdit: false,
               onClicked: () async {
                 await Navigator.of(context).push(
@@ -61,6 +69,8 @@ class _ProfileState extends State<Profile> {
             const NumbersWidget(),
             const SizedBox(height: 48),
             buildAbout(users),
+            const SizedBox(height: 20,),
+            const Text('Note: This page is solely for display purpose and will be made editable in future app releases.',textAlign: TextAlign.center,style: TextStyle(color: Colors.grey),),
           ],
         ),
           persistentFooterButtons: [
@@ -106,15 +116,21 @@ class _ProfileState extends State<Profile> {
     );
   }
 
-  Widget buildName(Usered users) => Column(
+  Widget buildName(Usered users) =>
+      Column(
         children: [
           Text(
-            user.displayName!,
+            // name,
+            // 'John Brown',
+            user.displayName??'',
+            // user.displayName!,
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
           ),
           const SizedBox(height: 4),
           Text(
-            user.email!,
+            // 'john123@gmail.com',
+            // user.email!,
+            user.email??'',
             style: const TextStyle(color: Colors.grey),
           )
         ],

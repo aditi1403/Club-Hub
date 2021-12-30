@@ -17,9 +17,13 @@ class _StrokesState extends State<Strokes> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // backgroundColor: Colors.white,
       backgroundColor: const Color(0xfffdfdfd),
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xfffdfdfd)),
+      ),
       body: Column(
         children: [
           Container(
@@ -28,7 +32,6 @@ class _StrokesState extends State<Strokes> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
               color: Color(0xFF71226f),
             ),
             child: Stack(
@@ -40,9 +43,7 @@ class _StrokesState extends State<Strokes> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
-                      color: Color(0xfff3eeea),
-                      // color: Color(0xffffe88a),
+                      color: Color(0xfffdfdfd),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -51,15 +52,15 @@ class _StrokesState extends State<Strokes> {
                   ),
                 ),
                 const Positioned(
-                  top: 100,
+                  top: 105,
                   left: 15,
                   child: Text(
                     "STROKES",
                     style: TextStyle(
-                      fontSize: 60,
+                      fontSize: 40,
                       letterSpacing: 7,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'KolkerBrush',
+                      fontFamily: 'KaushanScript',
                       // color: Color(0xFFee7f1c),
                       color: Colors.black,
                     ),
@@ -139,6 +140,7 @@ class _StrokesState extends State<Strokes> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        const SizedBox(height: 3,),
                         Text("Official Design Wing",
                           style: TextStyle(
                             fontSize: 12,
@@ -174,7 +176,6 @@ class _StrokesState extends State<Strokes> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: const Color(0xFF71226f),
-                        // color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
                         ),
@@ -235,22 +236,6 @@ class _StrokesState extends State<Strokes> {
                                     size: 30,
                                   ),
                                 ),
-
-                                // Text("||||||||"),
-                                // const Text("CSE\n2nd Yr",
-                                //   style: TextStyle(
-                                //       color: Colors.white
-                                //   ),
-                                // ),
-                                // buildDivider(),
-                                // GestureDetector(
-                                //   onTap: (){launch('https://www.linkedin.com/in/ambuj-raj-542913201/');},
-                                //   child: const Icon(
-                                //     FontAwesomeIcons.linkedin,
-                                //     color: Colors.white,
-                                //     size: 30,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -265,7 +250,6 @@ class _StrokesState extends State<Strokes> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: const Color(0xFF71226f),
-                        // color: Colors.black,
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
                         ),
@@ -297,14 +281,6 @@ class _StrokesState extends State<Strokes> {
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),
