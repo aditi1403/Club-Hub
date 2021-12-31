@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1095422060130:android:c42bf70bc407c5e373533b",
         "android_client_info": {
-          "package_name": "com.example.club_hub"
+          "package_name": "com.iiitn.club_hub"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "1095422060130-lavk9mq91fnvgfvbolte29a0mhi8aa4t.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.club_hub",
+            "package_name": "com.iiitn.club_hub",
             "certificate_hash": "833e4d104c4ef10f8a07021d32f959135229f375"
           }
         },

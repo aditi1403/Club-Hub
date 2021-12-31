@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.club_hub">
+    package="com.iiitn.club_hub">
    <application
        android:label="CLUB HUB"
        android:icon="@mipmap/ic_launcher">
