@@ -52,7 +52,7 @@ class _ProfileState extends State<Profile> {
             const SizedBox(height: 20,),
             ProfileWidget(
               imagePath: users.imagePath,
-              // imagePath: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+              // imagePath: 'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
               isEdit: false,
               onClicked: () async {
                 await Navigator.of(context).push(
@@ -154,6 +154,7 @@ class _ProfileState extends State<Profile> {
             ),
             const SizedBox(height: 16),
             Text(
+              // ' A student is a learner. A person who wishes to acquire knowledge and wisdom or skills in a particular field or develops his intellectual capabilities is a student.',
               users.about,
               style: const TextStyle(fontSize: 16, height: 1.4),
             ),

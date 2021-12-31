@@ -1,15 +1,9 @@
 // TODO Implement this library.
-// import 'package:animations/animations.dart';
 // ignore_for_file: avoid_unnecessary_containers
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:url_launcher/url_launcher.dart';
-// import 'package:flutter/scheduler.dart';
-// import 'tech_plethora_page.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
 class TechPlethora extends StatefulWidget {
@@ -78,6 +72,7 @@ class _TechPlethoraState extends State<TechPlethora> {
                         ),
                       ),
                     ),
+
 
                     // Clubs
                     // # i. Coding Wing (Dot Slash Community)

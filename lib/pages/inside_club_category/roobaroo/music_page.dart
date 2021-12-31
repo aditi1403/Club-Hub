@@ -17,9 +17,13 @@ class _CrescendoState extends State<Crescendo> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // backgroundColor: Colors.white,
       backgroundColor: const Color(0xFFC4FAE2),
-      // backgroundColor: const Color(0xffffe88a),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xFFC4FAE2)),
+      ),
       body: Column(
         children: [
           Container(
@@ -28,9 +32,7 @@ class _CrescendoState extends State<Crescendo> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
               color: Color(0xFF138f5b),
-              // color: Colors.black,
             ),
             child: Stack(
               children: [
@@ -41,9 +43,6 @@ class _CrescendoState extends State<Crescendo> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
-                      // color: Color(0xffd5e5f0),
-                      // color: Colors.white,
                       color: Color(0xFFC4FAE2),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
@@ -58,11 +57,10 @@ class _CrescendoState extends State<Crescendo> {
                   child: Text(
                     "CRESCENDO",
                     style: TextStyle(
-                      fontSize: 47,
-                      letterSpacing: 6,
+                      fontSize: 40,
+                      letterSpacing: 3,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'KolkerBrush',
-                      // color: Color(0xFFee7f1c),
+                      fontFamily: 'KaushanScript',
                       color: Colors.black,
                     ),
                   ),
@@ -86,8 +84,6 @@ class _CrescendoState extends State<Crescendo> {
                       width: width*0.9,
                       decoration: BoxDecoration(
                         color: Color(0xFFC4FAE2),
-                        // color: Colors.black,
-                        // color: Colors.white,
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
                           BoxShadow(
@@ -115,8 +111,6 @@ class _CrescendoState extends State<Crescendo> {
                       width: 150,
                       decoration: BoxDecoration(
                         color: Color(0xFFC4FAE2),
-                        // color: Colors.black,
-                        // color: Colors.white,
                         borderRadius: BorderRadius.circular(10.0),
                         image: const DecorationImage(
                             fit: BoxFit.fill,
@@ -127,7 +121,7 @@ class _CrescendoState extends State<Crescendo> {
                   ),
                 ),
                 Positioned(
-                  top: 60,
+                  top: 50,
                   left: 200,
                   child: Container(
                     height: 150,
@@ -139,11 +133,11 @@ class _CrescendoState extends State<Crescendo> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
+                        const SizedBox(height: 3,),
                         Text("Official Music Club",
                           style: TextStyle(
                             fontSize: 12,
@@ -152,7 +146,7 @@ class _CrescendoState extends State<Crescendo> {
                           ),
                         ),
                         Divider(color: Colors.black,),
-                        Text("A platform for students to cultivate their musical skills and talents and at setting up a musical culture which helps students develop and improve musical skills and knowledge and appreciate the diversity in music in our country as well as the world",
+                        Text("A platform for students to cultivate their musical skills and talents and at setting up a musical culture which helps students develop and improve musical skills and knowledge and appreciate the diversity in music in our country as well as the world.",
                           softWrap: true,
                           style: TextStyle(
                             fontSize: 9.8,
@@ -178,8 +172,7 @@ class _CrescendoState extends State<Crescendo> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
-                        color: Colors.black,
+                        color: Color(0xFF138f5b),
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
                         ),
@@ -205,7 +198,6 @@ class _CrescendoState extends State<Crescendo> {
                             "CLUB HEADS",
                             style: TextStyle(
                               color: Color(0xFFC4FAE2),
-                              // color: Colors.white,
                               fontSize: 12,
                             ),
                           ),
@@ -216,7 +208,6 @@ class _CrescendoState extends State<Crescendo> {
                             "Sakshi Pandagale",
                             style: TextStyle(
                               color: Color(0xFFC4FAE2),
-                              // color: Colors.white,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
@@ -231,7 +222,6 @@ class _CrescendoState extends State<Crescendo> {
                                 const Text("ECE   3rd Yr",
                                   style: TextStyle(
                                     color: Color(0xFFC4FAE2),
-                                      // color: Colors.white
                                   ),
                                 ),
                                 buildDivider(),
@@ -240,26 +230,9 @@ class _CrescendoState extends State<Crescendo> {
                                   child: const Icon(
                                     FontAwesomeIcons.linkedin,
                                     color: Color(0xFFC4FAE2),
-                                    // color: Colors.white,
                                     size: 30,
                                   ),
                                 ),
-
-                                // Text("||||||||"),
-                                // const Text("CSE\n2nd Yr",
-                                //   style: TextStyle(
-                                //       color: Colors.white
-                                //   ),
-                                // ),
-                                // buildDivider(),
-                                // GestureDetector(
-                                //   onTap: (){launch('https://www.linkedin.com/in/ambuj-raj-542913201/');},
-                                //   child: const Icon(
-                                //     FontAwesomeIcons.linkedin,
-                                //     color: Colors.white,
-                                //     size: 30,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -273,8 +246,7 @@ class _CrescendoState extends State<Crescendo> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
-                        color: Colors.black,
+                        color: const Color(0xFF138f5b),
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
                         ),
@@ -299,23 +271,13 @@ class _CrescendoState extends State<Crescendo> {
                           const Text(
                             "CONNECT WITH US!",
                             style: TextStyle(
-                              // color: Colors.white,
                               color: Color(0xFFC4FAE2),
-                              // color: Colors.white,
                               fontSize: 12,
                             ),
                           ),
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),
@@ -327,7 +289,6 @@ class _CrescendoState extends State<Crescendo> {
                                   onTap: (){launch('https://www.instagram.com/probe.iiitn/');},
                                   child: const Icon(
                                     FontAwesomeIcons.instagramSquare,
-                                    // color: Colors.black,
                                     color: Color(0xFFC4FAE2),
                                     size: 40,
                                   ),

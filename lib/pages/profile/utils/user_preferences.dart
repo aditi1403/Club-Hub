@@ -8,11 +8,11 @@ class UserPreferences {
   static const _keyUser = 'user';
   static const myUser = Usered(
     imagePath:
-    'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=333&q=80',
+    'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
     name: 'Sarah Abs',
     email: 'sarah.abs@gmail.com',
     about:
-    'An ideal student is always disciplined and lives in accordance with conduct. He is always conscious of his duties and responsibilities towards his parents and elders.  He is truthful, generous, kind-hearted and optimistic. He has a quest for knowledge. He maintains good health and a sound mind.',
+    ' A student is a learner. A person who wishes to acquire knowledge and wisdom or skills in a particular field or develops his intellectual capabilities is a student.  In order to be an ideal student, a person should possess the qualities of respect, love, self-discipline, self-control, faith, concentration, truthfulness, conviction, strength and firm determination. ',
     isDarkMode: false,
   );
 

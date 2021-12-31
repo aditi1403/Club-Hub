@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class HindiRaj extends StatefulWidget {
-  const HindiRaj({Key? key}) : super(key: key);
+class EBSB extends StatefulWidget {
+  const EBSB({Key? key}) : super(key: key);
 
   @override
-  _HindiRajState createState() => _HindiRajState();
+  _EBSBState createState() => _EBSBState();
 }
 
-class _HindiRajState extends State<HindiRaj> {
+class _EBSBState extends State<EBSB> {
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.of(context).size.height;
@@ -52,10 +52,10 @@ class _HindiRajState extends State<HindiRaj> {
                   ),
                 ),
                 const Positioned(
-                  top: 80,
+                  top: 100,
                   left: 10,
                   child: Text(
-                    "HINDI RAJ\nBHASHA",
+                    "EBSB",
                     style: TextStyle(
                       fontSize: 35,
                       letterSpacing: 3,
@@ -129,7 +129,7 @@ class _HindiRajState extends State<HindiRaj> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                        Text("HindiRajBhasha",
+                        Text("Ek Bharat Shrest Bharat",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
@@ -138,7 +138,7 @@ class _HindiRajState extends State<HindiRaj> {
                           ),
                         ),
                         const SizedBox(height: 3,),
-                        Text("Official Hindi Club",
+                        Text("Official EBSB Club",
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.grey,
@@ -205,7 +205,7 @@ class _HindiRajState extends State<HindiRaj> {
                             height: 4,
                           ),
                           const Text(
-                            "Maitreya Satish Zalte",
+                            "B.Likhith Yadav",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 22,
@@ -219,14 +219,14 @@ class _HindiRajState extends State<HindiRaj> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                const Text("CSE   2nd Yr",
+                                const Text("ECE   3rd Yr",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
                                 ),
                                 buildDivider(),
                                 GestureDetector(
-                                  onTap: (){launch('https://www.linkedin.com/in/maitreya-zalte-b9b1a9202/');},
+                                  onTap: (){launch('https://www.linkedin.com/in/likhith-yadav-b686aa1b3/');},
                                   child: const Icon(
                                     FontAwesomeIcons.linkedin,
                                     color: Colors.white,

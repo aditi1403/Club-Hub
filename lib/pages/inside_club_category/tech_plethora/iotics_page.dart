@@ -1,5 +1,4 @@
 // ignore_for_file: sized_box_for_whitespace
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -52,13 +51,13 @@ class _IoTicsState extends State<IoTics> {
                   ),
                 ),
                 const Positioned(
-                  top: 105,
-                  left: 15,
+                  top: 100,
+                  left: 10,
                   child: Text(
-                    "Iotics Wing",
+                    "IOTICS WING",
                     style: TextStyle(
-                      fontSize: 40,
-                      letterSpacing: 5,
+                      fontSize: 38,
+                      letterSpacing: 4,
                       fontWeight: FontWeight.w600,
                       fontFamily: 'KaushanScript',
                       color: Colors.black,

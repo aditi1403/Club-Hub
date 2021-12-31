@@ -1,20 +1,8 @@
-// import 'dart:js';
-
 // ignore_for_file: avoid_unnecessary_containers
-
-// import 'package:animations/animations.dart';
 import 'login/provider/google_sign_in.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
-// import 'package:provider/provider.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:flutter/scheduler.dart';
-// import 'pages/tech_plethora_page.dart';
-// import 'pages/music_club_page.dart';
-// import 'pages/icc_page.dart';
-// import 'ui/views/home_view.dart';
-// import 'core/viewmodels/home_model.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -26,8 +14,6 @@ class Home extends StatelessWidget {
       backgroundColor: const Color(0xffffe88a),
       appBar: AppBar(
           backgroundColor: const Color(0xffff914d).withOpacity(0.80) ,
-          // .withOpacity(0.27)
-          // backgroundColor: Colors.transparent,
           elevation: 0,
           title: const Text('CLUB HUB',
             style: TextStyle(
@@ -46,9 +32,6 @@ class Home extends StatelessWidget {
               color: Color(0xff000000),
             ),
           ),
-
-          // title: Image.asset('assets/appbar.png', width: 1440),
-          // rightTitle: true,
 
           actions: [
             IconButton(
@@ -120,10 +103,6 @@ class Home extends StatelessWidget {
                                       // scale: 8,
                                       // alignment: Alignment.center,
                                     ),
-                                    // iconSize: 200,
-                                    // padding: const EdgeInsets.all(100.0),
-                                    // onPressed: () {  },
-                                    // ),
                                   ),
                                 ),
                               ],
@@ -136,25 +115,6 @@ class Home extends StatelessWidget {
                       child: GestureDetector(
                         onTap: () {
                           Navigator.pushNamed(context, '/tech');
-                          // launch('https://iiitn.ac.in');
-                          // OpenContainer(
-                          //   transitionType: ContainerTransitionType.fadeThrough,
-                          //   closedElevation: 0.0,
-                          //   openElevation: 4.0,
-                          //   transitionDuration: const Duration(milliseconds: 1500),
-                          //   openBuilder: (BuildContext _, VoidCallback openContainer) {
-                          //     return const TechPlethora();
-                          //   },
-                          //   closedBuilder: (BuildContext _, VoidCallback openContainer) {
-                          //     return GestureDetector(
-                          //       onTap: ()async{openContainer();},
-                          //         child: const ListTile(
-                          //           leading: Icon(Icons.alarm),
-                          //           title: Text("TECH PLETHORA"),
-                          //         ),
-                          //       );
-                          //     },
-                          //   );
                         },
                         //techPlethora
                         child: ClipOval(
@@ -177,25 +137,6 @@ class Home extends StatelessWidget {
                                   child: GestureDetector(
                                     onTap: () {
                                       Navigator.pushNamed(context, '/icc');
-                                      // launch('https://iiitn.ac.in');
-                                      // OpenContainer(
-                                      //   transitionType: ContainerTransitionType.fadeThrough,
-                                      //   closedElevation: 0.0,
-                                      //   openElevation: 4.0,
-                                      //   transitionDuration: const Duration(milliseconds: 1500),
-                                      //   openBuilder: (BuildContext _, VoidCallback openContainer) {
-                                      //     return const ICC();
-                                      //   },
-                                      //   closedBuilder: (BuildContext _, VoidCallback openContainer) {
-                                      //     return InkWell(
-                                      //       onTap: ()async{openContainer();},
-                                      //       child: const ListTile(
-                                      //         leading: Icon(Icons.alarm),
-                                      //         title: Text("INNOVATION COUNCIL"),
-                                      //       ),
-                                      //     );
-                                      //   },
-                                      // );
                                     },
                                     //ICC
                                     child: ClipOval(
@@ -212,25 +153,6 @@ class Home extends StatelessWidget {
                                   child: GestureDetector(
                                     onTap: () {
                                       Navigator.pushNamed(context, '/music');
-                                      // launch('https://iiitn.ac.in');
-                                      // OpenContainer(
-                                      //   transitionType: ContainerTransitionType.fadeThrough,
-                                      //   closedElevation: 0.0,
-                                      //   openElevation: 4.0,
-                                      //   transitionDuration: const Duration(milliseconds: 1500),
-                                      //   openBuilder: (BuildContext _, VoidCallback openContainer) {
-                                      //     return const Music();
-                                      //   },
-                                      //   closedBuilder: (BuildContext _, VoidCallback openContainer) {
-                                      //     return InkWell(
-                                      //       onTap: ()async{openContainer();},
-                                      //       child: const ListTile(
-                                      //         leading: Icon(Icons.alarm),
-                                      //         title: Text("ROOBAROO"),
-                                      //       ),
-                                      //     );
-                                      //   },
-                                      // );
                                     },
                                     child: ClipOval(
                                       child: Image.asset('assets/music_logo.png',
@@ -249,6 +171,7 @@ class Home extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 50,),
+                    const Text('Developer:  Aditi Yadav | CSE | 2nd Yr',textAlign: TextAlign.center,style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold),),
                   ],
                 ),
               ),
@@ -259,8 +182,6 @@ class Home extends StatelessWidget {
 
       persistentFooterButtons: [
         SizedBox(
-          // padding: EdgeInsets.zero,
-          // color: const Color(0xffff914d).withOpacity(0.80),
           height: 50,
           child: Row(
             children: [
@@ -296,18 +217,6 @@ class Home extends StatelessWidget {
           ),
         ),
       ]
-      // const [ SizedBox(
-      //     height: 15,
-      //     width: 900,
-      //     child: Text(
-      //       'Copyright © 2021 All Rights Reserved',
-      //       textAlign: TextAlign.center,
-      //       style: TextStyle(
-      //         color: Colors.black,
-      //         letterSpacing: 1,
-      //       ),
-      //     ),
-      //   ) ],
     );
   }   //Build
 }

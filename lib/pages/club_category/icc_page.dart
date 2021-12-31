@@ -1,12 +1,6 @@
-// import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:url_launcher/url_launcher.dart';
-// import 'package:flutter/scheduler.dart';
-// import 'tech_plethora_page.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ICC extends StatefulWidget {
   const ICC({Key? key}) : super(key: key);
@@ -27,34 +21,6 @@ class _ICCState extends State<ICC> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: const BackButton(color: Color(0xff000000)),
-          // backgroundColor: const Color(0xffff914d).withOpacity(0.80) ,
-          // elevation: 0,
-          // title: const Text('INNOVATION COUNCIL',
-          //   style: TextStyle(
-          //     color: Color(0xff000000),
-          //     fontSize: 21.2,
-          //     fontFamily: 'PermanentMarker',
-          //   ),
-          // ),
-          // leading: GestureDetector(
-          //   onTap: () { Navigator.pop(context); },
-          //   child: const Icon(
-          //     Icons.logout, // add custom icons also
-          //     color: Color(0xff000000),
-          //   ),
-          // ),
-          //
-          // actions: [
-          //   IconButton(
-          //     icon: Image.asset('assets/iiitn.png',
-          //       height: 70,
-          //       width: 70,
-          //       fit: BoxFit.contain,
-          //     ),
-          //     iconSize: 50,
-          //     onPressed: () { launch('https://iiitn.ac.in'); },
-          //   ),
-          // ]
       ),
       body: Container(
         child: Row(
@@ -65,60 +31,16 @@ class _ICCState extends State<ICC> {
                 child: Column(
                   children: [
                     Container(
-                      child: Center(
-                        // child: Stack(
-                        //   children: <Widget>[
-                            child: Container(
-                              child: Image.asset('assets/icc_cover.png',
-                                  fit: BoxFit.cover,
-                                  height: 550,
-                                  width: double.infinity,
-                                  alignment: Alignment.topCenter
-                              ),
-                            ),
-                            // Positioned(
-                            //   top: 110,
-                            //   left: 10,
-                            //   right: 10,
-                            //   child: Column(
-                            //     children: [
-                            //       Container(
-                            //         child: Card(
-                            //           borderOnForeground: false,
-                            //           color: const Color(0xfffefefe),
-                            //           child: Column(
-                            //             // mainAxisSize: MainAxisSize.max,
-                            //             children: <Widget>[
-                            //               //Image
-                            //               ListTile(
-                            //                   title: Image.asset('assets/icc_banner.png',
-                            //                     fit: BoxFit.cover,
-                            //                     height: 200,
-                            //                     alignment: Alignment.center,
-                            //                   ),
-                            //               ),
-                            //             ],
-                            //           ),
-                            //         ),
-                            //       ),
-                            //       Container(
-                            //         child: RichText(
-                            //           softWrap: true,
-                            //           text: const TextSpan(
-                            //             text: '\n\n   The Innovation club creates awareness, educates, nurtures and inculcates a culture of innovation amongst students and enables them to generate new ideas and become more innovative in their outlook. \n   Students come in conjunction and build up strategies on their futuristics ideas to uplift the society and ease of living.\n\nInnovation Council Club is a synergy of: ',
-                            //             style: TextStyle(
-                            //               color: Color(0xff000000),
-                            //               fontSize: 18,
-                            //               fontFamily: 'ShadowsIntoLight',
-                            //             ),
-                            //           ),
-                            //         ),
-                            //       ),
-                            //     ],
-                            //   ),
-                            // ),
-                          // ],
-                        // ),
+                      child:
+                      Center(
+                        child: Container(
+                          child: Image.asset('assets/icc_cover.png',
+                              fit: BoxFit.cover,
+                              height: 550,
+                              width: double.infinity,
+                              alignment: Alignment.topCenter
+                          ),
+                        ),
                       ),
                     ),
                     const SizedBox(
@@ -136,23 +58,12 @@ class _ICCState extends State<ICC> {
                     const SizedBox(height: 20,),
                     Container(
                       padding: const EdgeInsets.only(left:15.0, right: 15.0),
-                      child: const Text('We create awareness, educate, nurture and inculcate a culture of innovation amongst students and enable them to generate new ideas and become more innovative in their outlook.\nStudents come in conjunction and build up strategies on their futuristics ideas to uplift the society and ease of living.\nInnovation Council Club is a synergy of: ',
+                      child: const Text('We create awareness, educate, nurture and inculcate a culture of innovation amongst students and enable them to generate new ideas and become more innovative in their outlook.\nStudents come in conjunction and build up strategies on their futuristics ideas to uplift the society and ease of living.\n\nInnovation Council Club is a synergy of: ',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontFamily: 'Comfortaa',),
                       ),
                     ),
                     const SizedBox(height: 40,),
-                    // Container(
-                    //   child: IconButton(
-                    //       icon: Image.asset('assets/club_arrow.png',
-                    //         height: 90,
-                    //         width: 90,
-                    //         fit: BoxFit.contain,
-                    //       ),
-                    //       iconSize: 90,
-                    //       onPressed: (){Navigator.pushNamed(context, '/inside_icc');},
-                    //     ),
-                    // ),
                     WillPopScope(
                       onWillPop: () async{
                         if(isDialOpen.value){
@@ -162,7 +73,6 @@ class _ICCState extends State<ICC> {
                           return true;
                         }
                       },
-                      // child: Container(
                       child: SpeedDial(
                         animatedIcon: AnimatedIcons.menu_arrow,
                         openCloseDial: isDialOpen,
@@ -175,31 +85,29 @@ class _ICCState extends State<ICC> {
                         children: [
                           // ACE
                           SpeedDialChild(
-                              child: const Icon(Icons.emoji_objects, color: Colors.black,),
+                              child: const Icon(Icons.emoji_objects, color: Color(0xffe21f27),),
                               label: 'ACE',
-                              // backgroundColor: Colors.black,
+                              backgroundColor: Colors.black,
                               onTap: (){
-                                // print('Share Tapped');
+                                isDialOpen.value = false;
                                 Navigator.pushNamed(context, '/ace_page');
                               }
                           ),
                           //Innovation
                           SpeedDialChild(
                               child: const Icon(Icons.psychology, color: Colors.black,),
-                              // backgroundColor: Colors.deepOrangeAccent,
                               label: 'Innovation',
                               onTap: (){
-                                // print('Mail Tapped');
-                                Navigator.pushNamed(context, '/innovation_page');
+                                isDialOpen.value = false;
+                                Navigator.pushNamed(context, '/innov_page');
                               }
                           ),
                           //IPR
                           SpeedDialChild(
                               child: const Icon(Icons.groups,color: Colors.black,),
-                              // backgroundColor: Colors.grey,
                               label: 'IPR',
                               onTap: (){
-                                // print('Copy Tapped');
+                                isDialOpen.value = false;
                                 Navigator.pushNamed(context, '/ipr_page');
                               }
                           ),

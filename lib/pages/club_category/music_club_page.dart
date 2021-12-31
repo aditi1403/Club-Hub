@@ -67,60 +67,16 @@ class _MusicState extends State<Music> {
                 child: Column(
                   children: [
                     Container(
-                      child: Center(
-                        // child: Stack(
-                        //   children: <Widget>[
-                            child: Container(
-                              child: Image.asset('assets/music_cover.png',
-                                  fit: BoxFit.cover,
-                                  height: 550,
-                                  width: double.infinity,
-                                  alignment: Alignment.topCenter
-                              ),
-                            ),
-                            // Positioned(
-                            //   top: 110,
-                            //   left: 10,
-                            //   right: 10,
-                            //   child: Column(
-                            //     children: [
-                            //       Container(
-                            //         child: Card(
-                            //           borderOnForeground: false,
-                            //           color: const Color(0xff333333),
-                            //           child: Column(
-                            //             // mainAxisSize: MainAxisSize.max,
-                            //             children: <Widget>[
-                            //               //Image
-                            //               ListTile(
-                            //                 title: Image.asset('assets/music_banner.png',
-                            //                   fit: BoxFit.cover,
-                            //                   height: 200,
-                            //                   alignment: Alignment.center,
-                            //                 ),
-                            //               ),
-                            //             ],
-                            //           ),
-                            //         ),
-                            //       ),
-                            //       Container(
-                            //         child: RichText(
-                            //           softWrap: true,
-                            //           text: const TextSpan(
-                            //             text: '\n\n   A club dedicated to unleash the talent that exudes from the budding student. \n   Promoting cultural activities results in enhancement of the personal skills and experiences like confidence; self-presentation; teamwork and collaboration; time management and organizational skills; self-awareness; self-discipline; open mindedness to move beyond boundaries and experiment with different ideas; communication skills; the ability to cope with criticism and learn from them resulting in a whole new developed, changed and an improved person.\n\nRoobaroo is a Fusion of : ',
-                            //             style: TextStyle(
-                            //               color: Color(0xff000000),
-                            //               fontSize: 18,
-                            //               fontFamily: 'ShadowsIntoLight',
-                            //             ),
-                            //           ),
-                            //         ),
-                            //       ),
-                            //     ],
-                            //   ),
-                            // ),
-                          // ],
-                        // ),
+                      child:
+                      Center(
+                        child: Container(
+                          child: Image.asset('assets/music_cover.png',
+                              fit: BoxFit.cover,
+                              height: 550,
+                              width: double.infinity,
+                              alignment: Alignment.topCenter
+                          ),
+                        ),
                       ),
                     ),
                     const SizedBox(
@@ -137,7 +93,7 @@ class _MusicState extends State<Music> {
                     const SizedBox(height: 20,),
                     Container(
                       padding: const EdgeInsets.only(left:15.0, right: 15.0),
-                      child: const Text('A club dedicated to unleash the talent that exudes from the budding student.\nPromoting cultural activities results in enhancement of the personal skills and experiences like confidence; self-presentation; teamwork and collaboration; time management and organizational skills; self-awareness; self-discipline; open mindedness to move beyond boundaries and experiment with different ideas; communication skills; the ability to cope with criticism and learn from them resulting in a whole new developed, changed and an improved person.\nRoobaroo is a Fusion of : ',
+                      child: const Text('Dedicated to unleash the talent that exudes from the budding student. Promoting cultural activities results in enhancement of the personal skills and experiences like confidence; self-presentation; teamwork and collaboration; time management and organizational skills; self-awareness; self-discipline; open mindedness to move beyond boundaries and experiment with different ideas; communication skills; the ability to cope with criticism and learn from them resulting in a whole new developed, changed and an improved person.\n\nRoobaroo is a Fusion of : ',
                         textAlign: TextAlign.center,
                         style: TextStyle(fontFamily: 'Comfortaa',),
                       ),
@@ -200,8 +156,8 @@ class _MusicState extends State<Music> {
                           ),
                           //Music
                           SpeedDialChild(
-                              child: const Icon(Icons.headphones,color: Colors.black,),
-                              // backgroundColor: Colors.grey,
+                              child: const Icon(Icons.headphones,color: Color(0xFF138f5b),),
+                              backgroundColor: const Color(0xFFC4FAE2),
                               label: 'Music',
                               onTap: (){
                                 isDialOpen.value = false;
@@ -211,8 +167,8 @@ class _MusicState extends State<Music> {
                           ),
                           //Orator
                           SpeedDialChild(
-                              child: const Icon(Icons.mic,color: Colors.black,),
-                              // backgroundColor: Colors.white,
+                              child: const Icon(Icons.mic,color: Color(0xFFc5855c),),
+                              backgroundColor: Color(0xFF25304b),
                               label: 'Orator',
                               onTap: (){
                                 isDialOpen.value = false;

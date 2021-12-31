@@ -15,9 +15,13 @@ class _OratorState extends State<Orator> {
     final double height = MediaQuery.of(context).size.height;
     final double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      // backgroundColor: Colors.white,
-      backgroundColor: const Color(0xFFC4FAE2),
-      // backgroundColor: const Color(0xffffe88a),
+      backgroundColor: const Color(0xFFeaeaea),
+      extendBodyBehindAppBar: true ,
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.transparent,
+        leading: const BackButton(color: Color(0xFFeaeaea)),
+      ),
       body: Column(
         children: [
           Container(
@@ -26,9 +30,7 @@ class _OratorState extends State<Orator> {
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(50),
               ),
-              // color: Color(0xFF363f93),
-              color: Color(0xFF138f5b),
-              // color: Colors.black,
+              color: Color(0xFF25304b),
             ),
             child: Stack(
               children: [
@@ -39,10 +41,7 @@ class _OratorState extends State<Orator> {
                     height: 100,
                     width: 300,
                     decoration: const BoxDecoration(
-                      // backgroundColor: const Color(0xffffe88a),
-                      // color: Color(0xffd5e5f0),
-                      // color: Colors.white,
-                      color: Color(0xFFC4FAE2),
+                      color: Color(0xFFeaeaea),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(50),
                         bottomRight: Radius.circular(50),
@@ -51,7 +50,7 @@ class _OratorState extends State<Orator> {
                   ),
                 ),
                 const Positioned(
-                  top: 100,
+                  top: 90,
                   left: 10,
                   child: Text(
                     "ORATOR",
@@ -59,7 +58,7 @@ class _OratorState extends State<Orator> {
                       fontSize: 47,
                       letterSpacing: 6,
                       fontWeight: FontWeight.w600,
-                      fontFamily: 'Comfortaa',
+                      fontFamily: 'KaushanScript',
                       // color: Color(0xFFee7f1c),
                       color: Colors.black,
                     ),
@@ -83,9 +82,7 @@ class _OratorState extends State<Orator> {
                       height: 180.0,
                       width: width*0.9,
                       decoration: BoxDecoration(
-                        color: Color(0xFFC4FAE2),
-                        // color: Colors.black,
-                        // color: Colors.white,
+                        color: Color(0xFFeaeaea),
                         borderRadius: BorderRadius.circular(0.0),
                         boxShadow: [
                           BoxShadow(
@@ -112,9 +109,7 @@ class _OratorState extends State<Orator> {
                       height: 150,
                       width: 150,
                       decoration: BoxDecoration(
-                        color: Color(0xFFC4FAE2),
-                        // color: Colors.black,
-                        // color: Colors.white,
+                        color: Color(0xFF25304b),
                         borderRadius: BorderRadius.circular(10.0),
                         image: const DecorationImage(
                             fit: BoxFit.fill,
@@ -125,7 +120,7 @@ class _OratorState extends State<Orator> {
                   ),
                 ),
                 Positioned(
-                  top: 60,
+                  top: 50,
                   left: 200,
                   child: Container(
                     height: 150,
@@ -137,12 +132,12 @@ class _OratorState extends State<Orator> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 17.3,
-                            // color: Color(0xFF363f93),
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text("Official Public Speaking & Debatting Club",
+                        const SizedBox(height: 3,),
+                        Text("Official Public Speaking & Debating Club",
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.grey,
@@ -150,7 +145,7 @@ class _OratorState extends State<Orator> {
                           ),
                         ),
                         Divider(color: Colors.black,),
-                        Text("This is the official debate and public speaking wing of the college. This is where you develop confidence of oratory and blah... blah...",
+                        Text("For those of you who feel the debate is a healthy discussion between two sides of the coin, and always ready to have more exposure. Improve your knowledge of the world around you and escalate your oratory skills.",
                           softWrap: true,
                           style: TextStyle(
                             fontSize: 9.8,
@@ -176,8 +171,7 @@ class _OratorState extends State<Orator> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
-                        color: Colors.black,
+                        color: const Color(0xFF25304b),
                         borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(80.0),
                         ),
@@ -202,8 +196,7 @@ class _OratorState extends State<Orator> {
                           const Text(
                             "CLUB HEADS",
                             style: TextStyle(
-                              color: Color(0xFFC4FAE2),
-                              // color: Colors.white,
+                              color: Color(0xFFeaeaea),
                               fontSize: 12,
                             ),
                           ),
@@ -213,8 +206,7 @@ class _OratorState extends State<Orator> {
                           const Text(
                             "Yash Mishra",
                             style: TextStyle(
-                              color: Color(0xFFC4FAE2),
-                              // color: Colors.white,
+                              color: Color(0xFFeaeaea),
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
                             ),
@@ -228,8 +220,7 @@ class _OratorState extends State<Orator> {
                               children: [
                                 const Text("ECE   2nd Yr",
                                   style: TextStyle(
-                                    color: Color(0xFFC4FAE2),
-                                    // color: Colors.white
+                                    color: Color(0xFFeaeaea),
                                   ),
                                 ),
                                 buildDivider(),
@@ -237,8 +228,7 @@ class _OratorState extends State<Orator> {
                                   onTap: (){launch('https://www.linkedin.com/in/yash-mishra-133893191/');},
                                   child: const Icon(
                                     FontAwesomeIcons.linkedin,
-                                    color: Color(0xFFC4FAE2),
-                                    // color: Colors.white,
+                                    color: Color(0xFFeaeaea),
                                     size: 30,
                                   ),
                                 ),
@@ -255,8 +245,7 @@ class _OratorState extends State<Orator> {
                     padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                     child: Container(
                       decoration: BoxDecoration(
-                        // color: const Color(0xFF71226f),
-                        color: Colors.black,
+                        color: const Color(0xFF25304b),
                         borderRadius: const BorderRadius.only(
                           topRight: Radius.circular(80.0),
                         ),
@@ -281,23 +270,13 @@ class _OratorState extends State<Orator> {
                           const Text(
                             "CONNECT WITH US!",
                             style: TextStyle(
-                              // color: Colors.white,
-                              color: Color(0xFFC4FAE2),
-                              // color: Colors.white,
+                              color: Color(0xFFeaeaea),
                               fontSize: 12,
                             ),
                           ),
                           const SizedBox(
                             height: 4,
                           ),
-                          // const Text(
-                          //   "Chirag Garg     &    Ambuj Raj",
-                          //   style: TextStyle(
-                          //     color: Colors.white,
-                          //     fontSize: 22,
-                          //     fontWeight: FontWeight.bold,
-                          //   ),
-                          // ),
                           const SizedBox(
                             height: 20,
                           ),
@@ -309,8 +288,7 @@ class _OratorState extends State<Orator> {
                                   onTap: (){launch('https://www.instagram.com/orator_club_iiitn/');},
                                   child: const Icon(
                                     FontAwesomeIcons.instagramSquare,
-                                    // color: Colors.black,
-                                    color: Color(0xFFC4FAE2),
+                                    color: Color(0xFFeaeaea),
                                     size: 40,
                                   ),
                                 ),
@@ -319,17 +297,17 @@ class _OratorState extends State<Orator> {
                                   onTap: (){launch('https://www.linkedin.com/company/orator-club-iiitn/');},
                                   child: const Icon(
                                     FontAwesomeIcons.linkedin,
-                                    // color: Colors.black,
-                                    color: Color(0xFFC4FAE2),
+                                    color: Color(0xFFeaeaea),
                                     size: 40,
                                   ),
                                 ),
+                                buildDivider(),
                                 GestureDetector(
                                   onTap: (){launch('https://discord.com/invite/KmBrMtktXP');},
                                   child: const Icon(
                                     FontAwesomeIcons.discord,
                                     size: 40,
-                                    color: Color(0xffc5855c),
+                                    color: Color(0xFFeaeaea),
                                   ),
                                 ),
                               ],
@@ -349,6 +327,6 @@ class _OratorState extends State<Orator> {
   }
   Widget buildDivider() => Container(
     height: 24,
-    child: const VerticalDivider(color: Color(0xFFC4FAE2),),
+    child: const VerticalDivider(color: Color(0xFFeaeaea),),
   );
 }
