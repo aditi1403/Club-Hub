@@ -1,9 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.club_hub">
    <application
-        android:label="club_hub"
-        android:icon="@mipmap/ic_launcher">
-        <activity
+       android:label="CLUB HUB"
+       android:icon="@mipmap/ic_launcher">
+        <!--suppress AndroidDomInspection -->
+       <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
@@ -39,3 +40,9 @@
             android:value="2" />
     </application>
 </manifest>
+<!--   android:icon="@mipmap/ic_launcher">-->
+<!--    android:launchMode="singleTop"-->
+<!--    android:theme="@style/LaunchTheme"-->
+<!--    android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"-->
+<!--    android:hardwareAccelerated="true"-->
+<!--    android:windowSoftInputMode="adjustResize">-->
