@@ -1,9 +1,9 @@
 import 'package:attendance_app/pages/login/provider/google_sign_in.dart';
-import 'package:flutter/cupertino.dart';
+// import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:attendance_app/pages/login/core/viewmodels/home_model.dart';
 import 'package:attendance_app/pages/login/ui/shared/globals.dart';
-import 'package:attendance_app/pages/login/ui/widgets/button_widget.dart';
+// import 'package:attendance_app/pages/login/ui/widgets/button_widget.dart';
 import 'package:attendance_app/pages/login/ui/widgets/textfield_widget.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
@@ -102,7 +102,9 @@ class HomeView extends StatelessWidget {
                       primary: const Color(0xffff914d),
                       minimumSize: const Size(double.infinity, 55)
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/home');
+                    },
                   child: const Text('Login',
                     style: TextStyle(
                       fontSize: 16,

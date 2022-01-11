@@ -86,27 +86,25 @@ class Home extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Column(
-                              children: [
-                                Positioned(
-                                  top: 5150,
-                                  left: 510,
-                                  right: 500,
-                                  child: Container(
-                                    // child: IconButton(
-                                    //   icon:
-                                    child:
+                            // Column(
+                            //   children: [
+                            //     Positioned(
+                            //       top: 5150,
+                            //       // left: 510,
+                            //       left: 0,
+                            //       right: 0,
+                                  // right: 500,
+                                  // child: Container(
+                                  //   child:
                                     Image.asset('assets/illustration.png',
                                       fit: BoxFit.scaleDown,
                                       height: 900,
                                       width: 1000,
-                                      // scale: 8,
-                                      // alignment: Alignment.center,
                                     ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                                  // ),
+                                // ),
+                              // ],
+                            // ),
                           ],
                         ),
                       ),
