@@ -17,9 +17,9 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-    final bool keyboardOpen = MediaQuery.of(context).viewInsets.bottom > 0;
     final model = Provider.of<HomeModel>(context);
+    final size = MediaQuery.of(context).size;
+    final bool keyboardisOpen = MediaQuery.of(context).viewInsets.bottom > 0;
 
     return Scaffold(
       backgroundColor: Global.white,
@@ -32,7 +32,7 @@ class HomeView extends StatelessWidget {
           AnimatedPositioned(
             duration: const Duration(milliseconds: 500),
             curve: Curves.easeOutQuad,
-            top: keyboardOpen ? -size.height / 3.7 : 0.0,
+            top: keyboardisOpen ? -size.height / 4.4 : 0.0 ,
             child: WaveWidget(
               size: size,
               yOffset: size.height / 3.0,
@@ -103,7 +103,7 @@ class HomeView extends StatelessWidget {
                       minimumSize: const Size(double.infinity, 55)
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/home');
+                    // Navigator.pushNamed(context, '/home');
                     },
                   child: const Text('Login',
                     style: TextStyle(

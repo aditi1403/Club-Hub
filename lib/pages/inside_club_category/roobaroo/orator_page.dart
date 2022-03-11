@@ -310,6 +310,15 @@ class _OratorState extends State<Orator> {
                                     color: Color(0xFFeaeaea),
                                   ),
                                 ),
+                                buildDivider(),
+                                GestureDetector(
+                                  onTap: (){launch('https://oratorclub.vercel.app/');},
+                                  child: const Icon(
+                                    FontAwesomeIcons.chrome,
+                                    color: Color(0xFFeaeaea),
+                                    size: 40,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
